@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./image/fullscreen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+.clockdiv{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color:rgb(97, 94, 94);
+}
+#clock{
+    color: rgba(252, 244, 244, 0.904);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 6.5rem;
+}
