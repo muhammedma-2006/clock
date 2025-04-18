@@ -1,9 +1,10 @@
 
 function updateClock() {
     const now = new Date();
-    let Hours = now.getHours().toString().padStart(2,0);
+    let Hours = now.getHours();
     const meridiam = Hours >= 12 ? "PM": "AM";
     Hours = Hours % 12 || 12;
+    Hours = Hours.toString().padStart(2,0);
     const Minutes = now.getMinutes().toString().padStart(2,0);
     const Second = now.getSeconds().toString().padStart(2,0);
     const timing = `${Hours}:${Minutes}:${Second} ${meridiam}`;
